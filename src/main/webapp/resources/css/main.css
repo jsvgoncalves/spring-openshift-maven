@@ -1,8 +1,10 @@
 body {
-    background: yellowgreen;
+    /*background: yellowgreen;*/
+    background: whitesmoke;
 }
 
 .main-content {
+    border: 2px solid #eee;
     background: white;
     border-radius: 5px;
     min-height: 200px;
