@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html layout:decorator="layout">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<!-- /* Content of this page will be decorated by the elements of layout.html (task/layout) */ -->
+<div  class="row main-content" layout:fragment="content">
+    <div class="col-md-6 content">
+        <!-- Quick Info -->
+        <h2>Quick info</h2>
+        <p>
+            Your templates are located here:
+        <pre>/webapp/WEB-INFO/views</pre>
+        </p>
+        <p>
+            Your javascript and css resources are located here:
+        <pre>/webapp/resources</pre>
+        </p>
+        <p>
+            You can find your controllers in the main source folder
+        </p>
+        <!-- Testing -->
+        <h2>Testing</h2>
+        <p>Run your JUnit tests:
+        <pre>src/test/java/org/jsvgoncalves/springquickstart</pre>
+        </p>
+
+    </div>
+    <div class="col-md-6 content">
+        <h2>Current Deployment</h2>
+        <p>
+            You can test this deployment by accessing the
+            <a href="intro/world">/intro</a> hello world page!
+        </p>
+    </div>
+</div>
+</body>
+</html>

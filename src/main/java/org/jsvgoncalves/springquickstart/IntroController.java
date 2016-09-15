@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IntroController {
 
+    @RequestMapping(value = "/")
+    public String index() {
+        return "intro/index";
+    }
+
     @RequestMapping(value = "/intro/{name}")
     public String intro(Model model, @PathVariable("name") String name) {
         model.addAttribute("name", name);
-        return "intro";
-    }
-
-    @RequestMapping(value = "/")
-    public String index() {
-        return "index";
+        return "intro/hello";
     }
 
 }
